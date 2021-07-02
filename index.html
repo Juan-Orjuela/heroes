@@ -1,38 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="es">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Tarot</title>
-  <meta name="description" content="Tarot animal">
-  <meta name="author" content="Appicua">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="estilos.css">
+    <title>Tarot</title>
+    <meta name="description" content="Tarot animal" />
+    <meta name="author" content="Appicua" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="tarot-contenedor">
-        <div id="tarot-esc-1">
-            <h2>Descubre qué animal eres</h2>
-            <button id="btn-iniciar" class="btn-primario" onclick="init()">INICIAR</button>
+      <div id="tarot-esc-1">
+        <h2>Descubre qué animal eres</h2>
+        <button id="btn-iniciar" class="btn-primario" onclick="init()">INICIAR</button>
+      </div>
+      <div id="tarot-esc-2">
+        <div id="resultado">
+          <img id="frente" src="img/tarot.gif" />
+          <img id="atras" src="img/tarot_1b.png" />
+          <div id="icon"><img src="img/icon.png" alt="Voltear" /></div>
         </div>
-        <div id="tarot-esc-2">
-            
-            <div id="resultado">
-                <img id="frente" src="img/tarot.gif">
-                <img id="atras" src="img/tarot_1b.png">
-            </div>
-        
-            <div id="nav">
-                <button id="btn-reiniciar" class="btn-secundario"  onclick="resetear()">REINICIAR</button>
-                <button id="btn-continuar" class="btn-primario" style="margin-left: 8px">CONTINUAR</button>
-                
-            </div>
+
+        <div id="nav">
+          <button id="btn-reiniciar" class="btn-secundario" onclick="resetear()">REINICIAR</button>
+          <button id="btn-continuar" class="btn-primario" style="margin-left: 8px">CONTINUAR</button>
         </div>
+      </div>
     </div>
-  <script src="scripts.js"></script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
